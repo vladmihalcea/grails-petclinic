@@ -1,7 +1,5 @@
 package org.grails.samples.pages
 
-import geb.Page
-
 class TutorialPage extends PageWithFooter {
 
 	static url = '/clinic/tutorial'

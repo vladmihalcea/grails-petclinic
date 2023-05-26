@@ -1,8 +1,6 @@
 package org.grails.samples.pages
 
-import geb.Page
-
-class ShowOwnerPage extends Page {
+class ShowOwnerPage {
 	
 	static at = {
 		title == 'Owner Information'

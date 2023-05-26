@@ -1,7 +1,5 @@
 package org.grails.samples.pages
 
-import geb.Page
-
 class DisplayVetsPage extends PageWithFooter {
 
 	static url = '/clinic/vets'

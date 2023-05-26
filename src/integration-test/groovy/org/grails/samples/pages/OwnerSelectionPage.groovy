@@ -1,8 +1,6 @@
 package org.grails.samples.pages
 
-import geb.Page
-
-class OwnerSelectionPage extends Page {
+class OwnerSelectionPage {
 
 	static url = '/owner/find'
 	

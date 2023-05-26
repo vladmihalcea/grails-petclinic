@@ -1,7 +1,5 @@
 package org.grails.samples.pages
 
-import geb.Page
-
 class FindOwnersPage extends PageWithFooter {
 
 	static url = '/owner/find'

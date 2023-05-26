@@ -19,6 +19,7 @@ plugins {
 version "0.1"
 group "petclinic"
 
+apply plugin: 'java'
 apply plugin: "spring-boot"
 apply plugin: "war"
 apply plugin: "asset-pipeline"
@@ -65,7 +66,6 @@ dependencies {
     runtime "org.grails.plugins:scaffolding"
 
     testCompile "org.grails:grails-plugin-testing"
-    testCompile "org.grails.plugins:geb"
 
     // Note: It is recommended to update to a more robust driver (Chrome, Firefox etc.)
     testCompile 'org.seleniumhq.selenium:selenium-htmlunit-driver:2.44.0'

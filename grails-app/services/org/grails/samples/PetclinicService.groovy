@@ -1,6 +1,22 @@
 package org.grails.samples
 
+import io.hypersistence.optimizer.HypersistenceOptimizer
+import io.hypersistence.optimizer.core.config.HibernateConfig
+
+import javax.annotation.PostConstruct
+
 class PetclinicService {
+
+	def sessionFactory
+
+	def hypersistenceOptimizer
+
+	@PostConstruct
+	void init() {
+		hypersistenceOptimizer = new HypersistenceOptimizer(
+			new HibernateConfig(sessionFactory)
+		)
+	}
 
 	// PetController
 

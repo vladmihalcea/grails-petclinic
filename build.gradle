@@ -31,6 +31,7 @@ apply plugin: "org.grails.grails-gsp"
 ext {
     grailsVersion = project.grailsVersion
     gradleWrapperVersion = project.gradleWrapperVersion
+	hypersistenceOptimizerVersion = '2.7.0'
 }
 
 assets {
@@ -64,6 +65,7 @@ dependencies {
 
     runtime "org.grails.plugins:asset-pipeline"
     runtime "org.grails.plugins:scaffolding"
+	compile "io.hypersistence:hypersistence-optimizer:${hypersistenceOptimizerVersion}"
 
     testCompile "org.grails:grails-plugin-testing"
 
